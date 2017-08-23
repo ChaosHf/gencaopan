@@ -3,6 +3,7 @@
 /* Mixins */
 @import "base/mixins.less";
 @import "base/_mixins.less";
+@import "common.less";
 .list-block{
   margin: 0;
 }
@@ -673,7 +674,70 @@ a.button:active {
       font-size: 15px;
     }
   }
+#page-strategy{
+  .buttons-tab .tabs-link.active{
+    color:#1c1c20;
+    border-color:#1c1c20;
+  }
+  .tabs{
+    padding: 0 12px;
+  }
+  .m-part{
+    margin: 14px 0;
+    background: #1c71d9;
+          color:#fff;
+          border-radius: 5px;
+          padding: 15px 10px;
+    .u-part-title{
 
+      font-size: 16px;
+      padding-bottom: 5px;
+    }
+    .u-part-text{
+       font-size: 12px;
+    }
+
+  }
+  .m-info{
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px 18px;
+    margin-bottom: 14px;
+  }
+      .m-info-panel{
+      display: flex;
+      text-align: center;
+      padding-bottom: 20px;
+      .m-info-box{
+        flex:1;
+        font-size: 15px;
+        .u-info-title{
+          color:#b6b6b6;
+          padding-bottom: 10px;
+        }
+        .u-info-num{
+          font-weight: 700;
+        }
+      }
+    }
+    .m-info-panel:last-child{
+            padding-bottom: 0;
+    }
+    .m-xieyi{
+      font-size: 14px;
+      padding-bottom: 10px;
+      .u-xieyi-title{
+        color:#b6b6b6;
+      }
+      .u-xieyi-name{
+        float:right;
+        color:#1c71d9;
+      }
+    }
+    .m-xieyi:last-child{
+      padding-bottom: 0;
+    }
+}
 //遮罩层
 .m-alert {
   position: fixed;
