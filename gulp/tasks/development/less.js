@@ -25,7 +25,7 @@ gulp.task('less', () => {
     .pipe($.sourcemaps.write())
     // 过滤掉rem.less，防止rem.less中设置的px单位转为rem单位
     .pipe(remfilter)
-    .pipe($.if('*.css',$.px2rem({rootValue: 20})))
+    .pipe($.if('*.css',$.px2rem({rootValue: 37.5})))
     .pipe(remfilter.restore)
     .pipe(gulp.dest(config.dest))
     .pipe(reload({stream: true}));
