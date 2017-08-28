@@ -33,3 +33,25 @@ $(document).on('pageInit', '#page-media', function (e, id, page) {
     });
   });
 });
+$(document).on('pageInit', '#page-applyInvest', function (e, id, page) {
+  $('.j-checkbox').click(function(){
+    if($(this).hasClass('nocheck')){
+      $(this).removeClass('nocheck');
+    }else{
+       $(this).addClass('nocheck');
+    }
+  });
+});
+$(document).on('pageInit', '#page-applyEnter', function (e, id, page) {
+  $('.j-checkbox').each(function(){
+    $(this).click(function(){
+    if($(this).children('.j-check').hasClass('nocheck')){
+      $(this).children('.j-check').removeClass('nocheck');
+      $(this).siblings().children('.j-check').addClass('nocheck');
+    }
+  });
+});
+$('.j-upload').click(function(){
+  $('.j-getUpload').trigger('click');
+});
+});

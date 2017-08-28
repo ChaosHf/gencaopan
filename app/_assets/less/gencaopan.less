@@ -681,10 +681,10 @@ a.button:active {
 }
 
 #page-strategy {
-  .buttons-tab .button{
-    height: 37.5px;
-    line-height: 37.5px;
-  }
+    .buttons-tab .button {
+        height: 37.5px;
+        line-height: 37.5px;
+    }
     .buttons-tab .tabs-link.active {
         color: #1c1c20;
         border-color: #1c1c20;
@@ -692,7 +692,6 @@ a.button:active {
     .tabs {
         padding: 0 12px 60px 12px;
     }
-
     .m-part {
         margin: 14px 0;
         background: #1c71d9;
@@ -746,136 +745,383 @@ a.button:active {
     .m-xieyi:last-child {
         padding-bottom: 0;
     }
-    .m-suggest{
+    .m-suggest {
         padding: 0;
     }
-    .m-suggest-title{
-      padding:20px 0;
-      .m-suggest-t-left{
-        height: 47px;
-        border-left:6px solid #000;
-        padding-left: 10px;
-        display: inline-block;
-        width: 75%;
-        .u-suggest-t{
-          font-size: 16px;
-          padding-bottom:5px;
+    .m-suggest-title {
+        padding: 20px 0;
+        .m-suggest-t-left {
+            height: 47px;
+            border-left: 6px solid #000;
+            padding-left: 10px;
+            display: inline-block;
+            width: 75%;
+            .u-suggest-t {
+                font-size: 16px;
+                padding-bottom: 5px;
+            }
+            .u-suggest-tips {
+                font-size: 12px;
+                color: #b6b6b6;
+            }
         }
-        .u-suggest-tips{
-          font-size: 12px;
-          color:#b6b6b6;
+        .u-avatar {
+            float: right;
+            width: 50px;
+            height: 50px;
+            margin-right: 20px;
+            border-radius: 50%;
         }
-      }
-      .u-avatar{
-        float: right;
-        width: 50px;
-        height: 50px;
-        margin-right: 20px;
-        border-radius: 50%;
-      }
     }
-    .m-suggest-panel{
-      font-size: 13px;
-      margin: 0 20px;
-      padding: 10px 0;
-      border-top:1px solid #f1f1f1;
-      .u-suggest-title{
-        color:#1c71d9;
-        padding-bottom: 5px;
-      }
+    .m-suggest-panel {
+        font-size: 13px;
+        margin: 0 20px;
+        padding: 10px 0;
+        border-top: 1px solid #f1f1f1;
+        .u-suggest-title {
+            color: #1c71d9;
+            padding-bottom: 5px;
+        }
     }
-    .u-down{
-      margin: 0 auto 14px auto;
-      display: block;
-      width: 39px;
-      height: 39px;
+    .u-down {
+        margin: 0 auto 14px auto;
+        display: block;
+        width: 39px;
+        height: 39px;
     }
-    .u-info-img{
-      width: 100%;
-    }
-}
-#page-openAccount{
-    .buttons-tab .button{
-    height: 37.5px;
-    line-height: 37.5px;
-  }
-      .buttons-tab .tabs-link.active {
-        color: #1c1c20;
-        border-color: #1c1c20;
-    }
-    buttons-tab .a.button:active{
-        color: #1c1c20;
-        border-color: #1c1c20;
-    }
-    .tabs{
-      width: 100%;
-      height: 680px;
-      margin-bottom: 60px;
-      background: url('../images/gencao/bg_openAccount.png')no-repeat center;
-      background-size: 100%;
-      position: relative;
-      .u-qrcode{
-        position: absolute;
-        left:50%;
-        margin-left: -68px;
-        top:502px;
-        width: 136px;
-        height: 136px;
-      }
-    }
-}
-#page-member{
-      .buttons-tab .button{
-    height: 37.5px;
-    line-height: 37.5px;
-  }
-      .buttons-tab .tabs-link.active {
-        color: #1c1c20;
-        border-color: #1c1c20;
-    }
-    buttons-tab .a.button:active{
-        color: #1c1c20;
-        border-color: #1c1c20;
-    }
-}
-    .m-strategy-foot {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        z-index: 12;
+    .u-info-img {
         width: 100%;
-        height: 60px;
-        border-top: 1px solid #e8e8e8;
-        background: #fff;
-        white-space: nowrap;
-        overflow: hidden;
-        text-align: center;
-        .m-s-foot-box {
-            float: left;
-            width: 50%;
-            padding-top: 8px;
-            .u-s-share {
-                display: inline-block;
-                width: 160px;
-                height: 43px;
-                line-height: 43px;
-                background: #1c71d9;
-                font-size: 16px;
-                color: #fff;
-                border-radius: 5px;
+    }
+}
+
+#page-openAccount {
+    .buttons-tab .button {
+        height: 37.5px;
+        line-height: 37.5px;
+    }
+    .buttons-tab .tabs-link.active {
+        color: #1c1c20;
+        border-color: #1c1c20;
+    }
+    buttons-tab .a.button:active {
+        color: #1c1c20;
+        border-color: #1c1c20;
+    }
+    .tabs {
+        width: 100%;
+        height: 680px;
+        margin-bottom: 60px;
+        background: url('../images/gencao/bg_openAccount.png')no-repeat center;
+        background-size: 100%;
+        position: relative;
+        .u-qrcode {
+            position: absolute;
+            left: 50%;
+            margin-left: -68px;
+            top: 502px;
+            width: 136px;
+            height: 136px;
+        }
+    }
+}
+
+#page-member {
+    .buttons-tab .button {
+        height: 37.5px;
+        line-height: 37.5px;
+    }
+    .buttons-tab .tabs-link.active {
+        color: #1c1c20;
+        border-color: #1c1c20;
+    }
+    buttons-tab .a.button:active {
+        color: #1c1c20;
+        border-color: #1c1c20;
+    }
+}
+
+#page-applyInvest {
+    .m-invest-panel {
+        display: flex;
+        font-size: 15px;
+        background: #ffffff;
+        padding: 17px 13px;
+        border-bottom: 1px solid #d2d2d2;
+        .u-invest-title {
+            width: 120px;
+        }
+        .u-invest-input {
+            flex: 1;
+            input {
+                width: 100%;
+                color: #d0d0d0;
+                border: none;
+                overflow: hidden;
             }
-            .u-s-invite {
+        }
+        .u-invest-yanz {
+            white-space: nowrap;
+            input {
+                width: 130px;
+            }
+            .u-invest-button {
                 display: inline-block;
-                width: 160px;
-                height: 43px;
-                line-height: 43px;
-                background: #ff6508;
-                font-size: 16px;
-                color: #fff;
+                width: 85px;
+                height: 28px;
+                line-height: 28px;
+                text-align: center;
+                border: 1px solid #e84d48;
+                font-size: 13px;
+                color: #e84d48;
                 border-radius: 5px;
             }
         }
     }
+    .m-invest-panel:last-child {
+        border: none;
+    }
+    .m-invest-tips {
+        margin: 17px 13px;
+        background: #fff;
+        font-size: 14px;
+        padding: 15px;
+        .u-invest-tips-panel {
+            display: flex;
+            .u-invest-tips-l {
+                color: #b6b6b6;
+                width: 95px;
+            }
+            .u-invest-tips-r {
+                flex: 1;
+                color: #1c71d9;
+                text-align: right;
+            }
+        }
+        .u-invest-tips-panel:last-child {
+            padding-top: 6px;
+        }
+    }
+    .m-invest-checkbox {
+        padding-left: 13px;
+        i {
+            width: 14px;
+            height: 14px;
+            display: inline-block;
+            vertical-align: middle;
+            background: url('../images/gencao/check_r.png')no-repeat center;
+            background-size: 14px;
+        }
+        i.nocheck {
+            background: url('../images/gencao/check_n.png')no-repeat center;
+            background-size: 14px;
+        }
+        span {
+            height: 14px;
+            display: inline-block;
+            vertical-align: middle;
+            color: #a3a3a3;
+            padding-left: 10px;
+            font-size: 12px;
+        }
+    }
+    .u-invest-apply {
+        font-size: 15px;
+        color: #fff;
+        width: 232px;
+        height: 45px;
+        line-height: 45px;
+        background: #e84d48;
+        border-radius: 5px;
+        text-align: center;
+        margin: 20px auto 10px auto;
+    }
+    .m-invest-tipBox {
+        font-size: 11px;
+        text-align: center;
+        padding-bottom: 20px;
+        .u-invest-tipBox-p {
+            color: #a3a3a3;
+        }
+        .u-invest-p-red {
+            color: #e84d48;
+        }
+    }
+}
+
+#page-applyEnter {
+    .bar-tab{
+       height: 38px;
+       background: #f6f6f6; 
+    }
+    .bar-tab .tab-item {
+        height: 38px;
+        border-left: 1px solid #ddd;
+    }
+    .bar-tab .tab-item .icon {
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        padding: 0;
+        top:0;
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    .bar-tab .tab-item .icon~.tab-label {
+        vertical-align: middle;
+        height: 20px;
+        top:0;
+        display: inline-block;
+        color: #000;
+        font-size: 12px;
+    }
+    .m-invest-panel {
+        display: flex;
+        font-size: 15px;
+        background: #ffffff;
+        padding: 17px 13px;
+        border-bottom: 1px solid #d2d2d2;
+        .u-invest-title {
+            width: 120px;
+        }
+        .u-invest-input {
+            flex: 1;
+            input {
+                width: 100%;
+                color: #d0d0d0;
+                border: none;
+                overflow: hidden;
+            }
+            select {
+                appearance: none;
+                width: 100%;
+                color: #d0d0d0;
+                border: none;
+                overflow: hidden;
+            }
+        }
+        .u-invest-yanz {
+            white-space: nowrap;
+            input {
+                width: 130px;
+            }
+            .u-invest-button {
+                display: inline-block;
+                width: 85px;
+                height: 28px;
+                line-height: 28px;
+                text-align: center;
+                border: 1px solid #e84d48;
+                font-size: 13px;
+                color: #e84d48;
+                border-radius: 5px;
+            }
+        }
+        .u-invest-upload {
+            position: relative;
+            input {
+                width: 180px;
+            }
+            .upload-qrcode {
+                position: absolute;
+                width: 27px;
+                height: 27px;
+                right: 10px;
+                top: -5px;
+            }
+        }
+    }
+    .m-invest-panel:last-child {
+        border: none;
+    }
+    .m-invest-checkbox {
+        display: inline-block;
+        padding-right: 10px;
+        i {
+            width: 16px;
+            height: 16px;
+            display: inline-block;
+            vertical-align: middle;
+            background: url('../images/gencao/check_r.png')no-repeat center;
+            background-size: 15px;
+        }
+        i.nocheck {
+            background: url('../images/gencao/check_n.png')no-repeat center;
+            background-size: 15px;
+        }
+        span {
+            height: 16px;
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: 10px;
+            line-height: 16px;
+            font-size: 15px;
+        }
+    }
+    .u-invest-apply {
+        font-size: 15px;
+        color: #fff;
+        width: 232px;
+        height: 45px;
+        line-height: 45px;
+        background: #e84d48;
+        border-radius: 5px;
+        text-align: center;
+        margin: 20px auto 10px auto;
+    }
+    .m-invest-tipBox {
+        font-size: 11px;
+        text-align: center;
+        padding-bottom: 20px;
+        .u-invest-tipBox-p {
+            color: #a3a3a3;
+        }
+        .u-invest-p-red {
+            color: #e84d48;
+        }
+    }
+}
+
+.m-strategy-foot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 12;
+    width: 100%;
+    height: 60px;
+    border-top: 1px solid #e8e8e8;
+    background: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    .m-s-foot-box {
+        float: left;
+        width: 50%;
+        padding-top: 8px;
+        .u-s-share {
+            display: inline-block;
+            width: 160px;
+            height: 43px;
+            line-height: 43px;
+            background: #1c71d9;
+            font-size: 16px;
+            color: #fff;
+            border-radius: 5px;
+        }
+        .u-s-invite {
+            display: inline-block;
+            width: 160px;
+            height: 43px;
+            line-height: 43px;
+            background: #ff6508;
+            font-size: 16px;
+            color: #fff;
+            border-radius: 5px;
+        }
+    }
+}
+
 //遮罩层
 .m-alert {
     position: fixed;
