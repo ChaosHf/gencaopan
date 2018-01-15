@@ -18,5 +18,5 @@ gulp.task('build:production:sequence', (cb) => {
 
   browserSync.notify('Building Production');
 
-  $.sequence('html:production', 'images:production', 'fonts:production', 'extras:production', 'build:production', 'rev-hash:sequence', cb);
+  $.sequence('html:production', 'images:production', 'fonts:production', 'extras:production', 'build:production',  cb);
 });

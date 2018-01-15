@@ -41,6 +41,16 @@ $(document).on('pageInit', '#page-applyInvest', function (e, id, page) {
        $(this).addClass('nocheck');
     }
   });
+  $('.j-close').on('click', function () {
+    var close_obj = $(this).data('close-obj');
+    $(close_obj).hide();
+  });
+  $('.j-xieyi').on('click', function () {
+    $('.j-plate_rule').show();
+  });
+  $('.j-celue').on('click', function () {
+    $('.j-plate_celue').show();
+  });
 });
 $(document).on('pageInit', '#page-applyEnter', function (e, id, page) {
   $('.j-checkbox').each(function(){
@@ -54,4 +64,16 @@ $(document).on('pageInit', '#page-applyEnter', function (e, id, page) {
 $('.j-upload').click(function(){
   $('.j-getUpload').trigger('click');
 });
+});
+$(document).on('pageInit', '#page-strategy', function (e, id, page) {
+  $('.j-close').on('click', function () {
+    var close_obj = $(this).data('close-obj');
+    $(close_obj).hide();
+  });
+  $('.j-xieyi').on('click', function () {
+    $('.j-plate_rule').show();
+  });
+  $('.j-celue').on('click', function () {
+    $('.j-plate_celue').show();
+  });
 });

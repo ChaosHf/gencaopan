@@ -37,10 +37,10 @@ gulp.task('html:production', () => {
     // .pipe(jsfilter)
     // .pipe($.if('*.js', $.uglify()))
     // .pipe(jsfilter.restore)
-    .pipe(cssfilter)
-    .pipe($.if('*.css', urlAdjuster({replace: cssUrlReplace})))
-    .pipe($.if('*.css', $.cleanCss({compatibility: '*', advanced: false})))
-    .pipe(cssfilter.restore)
+    // .pipe(cssfilter)
+    // .pipe($.if('*.css', urlAdjuster({replace: cssUrlReplace})))
+    // .pipe($.if('*.css', $.cleanCss({compatibility: '*', advanced: false})))
+    // .pipe(cssfilter.restore)
     /*.pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))*/
     .pipe(gulp.dest(config.production.dest));
 
