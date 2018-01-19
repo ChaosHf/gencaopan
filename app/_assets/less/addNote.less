@@ -1,0 +1,105 @@
+#page-addNote{
+    .new-content {
+        margin: 23px auto 0 auto;
+        padding: 25px 20px 0 20px;
+        height: 279px;
+        width: 715px;
+        color: #111;
+        background: #fff;
+        background: url('../images/note/bg_unchoose.png')no-repeat center;
+        background-size: 715px 278px;
+        .new-content-title {
+            display: flex;
+            .title-left {
+                font-size: 36px;
+                flex: 1;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                .u-title-left-s {
+                    font-size: 20px;
+                    color: #bbb;
+                    padding-top: 5px;
+                    span {
+                        padding-right: 20px;
+                    }
+                }
+            }
+            .title-right {
+                flex: 1;
+                position: relative;
+                font-size: 24px;
+                .title-text {
+                    position: absolute;
+                    right: 0;
+                    bottom:1px;
+                    span {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    .u-status1 {
+                        text-align: center;
+                        font-size: 20px;
+                        width: 83px;
+                        height: 29px;
+                        line-height: 29px;
+                        background-color: #fdddc9;
+                        border-radius: 14px;
+                        color: #ff6000;
+                        margin-right: 12px;
+                    }
+                    .u-status2{
+                        text-align: center;
+                        font-size: 20px;
+                        width: 83px;
+                        height: 29px;
+                        line-height: 29px;
+                        background-color: #eaeaea;
+                        border-radius: 14px;
+                        color: #bbb;
+                        margin-right: 12px;
+                    }
+                    .u-pre {
+                        color: #e10000;
+                    }
+                    .u-pre1 {
+                        color: #01be29;
+                    }
+                }
+            }
+        }
+        .new-content-panel {
+            display: flex;
+            padding: 30px 0 0 0;
+            text-align: center;
+            .panel-title {
+                color: #111;
+                font-size: 24px;
+            }
+            .panel-left {
+                flex: 1;
+                border-right: 1px solid #efefef;
+                .panel-num {
+                    font-size: 70px;
+                    color: #ff6000;
+                    span {
+                        font-size: 30px;
+                    }
+                }
+            }
+            .panel-right {
+                flex: 1;
+                .panel-money {
+                    font-size: 70px;
+                    span {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .new-content-choose{
+        background: url('../images/note/bg_choose.png')no-repeat center;
+        background-size: 715px 278px;
+    }
+}

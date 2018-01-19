@@ -1,0 +1,306 @@
+@@include('include/cssHead.html')
+
+<body>
+  <!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+  <div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div id="page-index" class="page">
+      <!--工具栏-->
+      @@include('include/navInclude.html')
+      <div class="content">
+        <div class="banner">
+          <div class="search-box">
+            <div class="search-content">
+              <span class="search-icon"></span>
+              <input type="text" class="search-input" placeholder="输入股票代码">
+            </div>
+          </div>
+        </div>
+        <!--标签页-->
+        <div class="buttons-tab">
+          <a href="#" class="tabs-link active button j-link" data-tab=".niugu" external>牛股王</a>
+          <a href="#" class="tabs-link button j-link" data-tab=".income" external>收益榜单</a>
+          <a href="#" class="tabs-link button j-link" data-tab=".release" external>最新发布</a>
+        </div>
+        <div class="index-tab">
+          <div class="tabs">
+            <div class="tab niugu ">
+              <div class="m-serve">
+                <img src="assets/images/index/img_avatar.png" alt="" class="u-serve-avatar">
+                <div class="m-serve-m">
+                  <p class="u-serve-title">客户经理007</p>
+                  <p class="u-serve-info">我是您的客户顾问小7，很高兴为您服务</p>
+                  <div class="m-m-box">
+                    <img src="assets/images/index/img_per.png" alt="" class="u-m-ico">
+                    <span class="u-m-text">小7</span>
+                    <img src="assets/images/index/img_phone.png" alt="" class="u-m-ico">
+                    <span>18872890188</span>
+                  </div>
+                </div>
+                <div class="u-serve-question">提问</button>
+                </div>
+
+              </div>
+              <div class="m-panel">
+                <div class="m-panel-l-box">
+                  <div class="m-panel-l">
+                    <div class="m-p-l-box">
+                      <span class="u-status">收</span>
+                      <img src="assets/images/index/n-avatar.png" alt="">
+                    </div>
+                    <p>骨骸指南</p>
+                  </div>
+                  <div class="m-panel-m">
+                    <p>累计收益率：
+                      <span class="u-red">3.34%</span>
+                    </p>
+                    <p>年均收益：
+                      <span class="u-green">3.34%</span>
+                    </p>
+                    <p>成功率：
+                      <span>88%</span>
+                    </p>
+                    <p>无视盈亏</p>
+                  </div>
+                </div>
+                <div class="m-panel-r">
+                  <div class="u-r-status">
+                    <span>订阅中</span>
+                  </div>
+                  <div class="u-r-num">527人已订阅</div>
+                </div>
+              </div>
+              <div class="m-panel">
+                <div class="m-panel-l-box">
+                  <div class="m-panel-l">
+                    <div class="m-p-l-box">
+                      <span class="u-status">收</span>
+                      <img src="assets/images/index/n-avatar.png" alt="">
+                    </div>
+                    <p>骨骸指南</p>
+                  </div>
+                  <div class="m-panel-m">
+                    <p>累计收益率：
+                      <span class="u-red">3.34%</span>
+                    </p>
+                    <p>年均收益：
+                      <span class="u-green">3.34%</span>
+                    </p>
+                    <p>成功率：
+                      <span>88%</span>
+                    </p>
+                    <p>无视盈亏</p>
+                  </div>
+                </div>
+                <div class="m-panel-r">
+                  <div class="u-r-price">
+                    <p>
+                      <span>300</span>元/月</p>
+                    <div class="u-r-pay">包月</div>
+                  </div>
+                  <div class="u-r-price">
+                    <p>
+                      <span>300</span>元/季</p>
+                    <div class="u-r-pay">包季</div>
+                  </div>
+                  <div class="u-r-num">527人已订阅</div>
+                </div>
+              </div>
+            </div>
+            <div class="tab income active">
+              <div class="new-title">
+                <div class="new-box active">收益低于10%</div>
+                <div class="new-box">收益10%～20%</div>
+                <div class="new-box">收益高于20%</div>
+              </div>
+              <div class="new-content">
+                <div class="new-content-title">
+                  <div class="title-left">
+                    <p class="u-title-left">一串小阳线，涨停潮</p>
+                    <p class="u-title-left-s">
+                      <span>发布02-05 13:20</span>截止02-06</p>
+                  </div>
+                  <div class="title-right">
+                    <p class="title-text">
+                      <span class="u-status1">进行中</span>
+                      <span>起算后已上涨</span>
+                      <span class="u-pre">0.56%</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="new-content-panel">
+                  <div class="panel-left">
+                    <div class="panel-num">17
+                      <span>%</span>
+                    </div>
+                    <div class="panel-title">一年预期收益</div>
+                  </div>
+                  <div class="panel-right">
+                    <div class="panel-money">10
+                      <span>元阅读费</span>
+                    </div>
+                    <div class="panel-title">34人已阅</div>
+                  </div>
+                </div>
+                <div class="new-content-info">
+                  <div class="info-box">
+                    <img src="assets/images/index/avatar.png" alt="" class="info-avatar">
+                    <div class="info-per">
+                      <div class="info-title">超级牛股王</div>
+                      <div class="info-content">
+                        <span>38篇笔记</span>
+                        <span>成功率58.89%</span>
+                        <span>总涨幅67%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="info-bag">￥500.00红包</div>
+                </div>
+              </div>
+              <div class="new-content">
+                  <div class="new-content-title">
+                    <div class="title-left">
+                      <p class="u-title-left">一串小阳线，涨停潮</p>
+                      <p class="u-title-left-s">
+                        <span>发布02-05 13:20</span>截止02-06</p>
+                    </div>
+                    <div class="title-right">
+                      <p class="title-text">
+                        <span class="u-status2">待起算</span>
+                        <span>起算后已下跌</span>
+                        <span class="u-pre1">0.56%</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="new-content-panel">
+                    <div class="panel-left">
+                      <div class="panel-num">17
+                        <span>%</span>
+                      </div>
+                      <div class="panel-title">一年预期收益</div>
+                    </div>
+                    <div class="panel-right">
+                      <div class="panel-money">10
+                        <span>元阅读费</span>
+                      </div>
+                      <div class="panel-title">34人已阅</div>
+                    </div>
+                  </div>
+                  <div class="new-content-info">
+                    <div class="info-box">
+                      <img src="assets/images/index/avatar.png" alt="" class="info-avatar">
+                      <div class="info-per">
+                        <div class="info-title">超级牛股王</div>
+                        <div class="info-content">
+                          <span>38篇笔记</span>
+                          <span>成功率58.89%</span>
+                          <span>总涨幅67%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="info-bag">￥500.00红包</div>
+                  </div>
+                </div>
+              <div class="u-getmore">加载更多</div>
+            </div>
+            <div class="tab release ">
+                <div class="new-title">
+                    <div class="new-box active">收益低于10%</div>
+                    <div class="new-box">收益10%～20%</div>
+                    <div class="new-box">收益高于20%</div>
+                  </div>
+                  <div class="new-content">
+                    <div class="new-content-title">
+                      <div class="title-left">
+                        <p class="u-title-left">一串小阳线，涨停潮</p>
+                        <p class="u-title-left-s">
+                          <span>发布02-05 13:20</span>截止02-06</p>
+                      </div>
+                      <div class="title-right">
+                        <p class="title-text">
+                          <span class="u-status1">进行中</span>
+                          <span>起算后已上涨</span>
+                          <span class="u-pre">0.56%</span>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="new-content-panel">
+                      <div class="panel-left">
+                        <div class="panel-num">17
+                          <span>%</span>
+                        </div>
+                        <div class="panel-title">一年预期收益</div>
+                      </div>
+                      <div class="panel-right">
+                        <div class="panel-money">10
+                          <span>元阅读费</span>
+                        </div>
+                        <div class="panel-title">34人已阅</div>
+                      </div>
+                    </div>
+                    <div class="new-content-info">
+                      <div class="info-box">
+                        <img src="assets/images/index/avatar.png" alt="" class="info-avatar">
+                        <div class="info-per">
+                          <div class="info-title">超级牛股王</div>
+                          <div class="info-content">
+                            <span>38篇笔记</span>
+                            <span>成功率58.89%</span>
+                            <span>总涨幅67%</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info-bag">￥500.00红包</div>
+                    </div>
+                  </div>
+                  <div class="new-content">
+                    <div class="new-content-title">
+                      <div class="title-left">一串小阳线，涨停潮</div>
+                      <div class="title-right">
+                        <span class="title-text">起算日：03-09 09:30</span>
+                      </div>
+                    </div>
+                    <div class="new-content-panel">
+                      <div class="panel-left">
+                        <div class="panel-num">17
+                          <span>%</span>
+                        </div>
+                        <div class="panel-title">一年预期收益</div>
+                      </div>
+                      <div class="panel-right">
+                        <div class="panel-money">10
+                          <span>元阅读费</span>
+                        </div>
+                        <div class="panel-title">34人已阅</div>
+                      </div>
+                    </div>
+                    <div class="new-content-info">
+                      <div class="info-box">
+                        <img src="assets/images/index/avatar.png" alt="" class="info-avatar">
+                        <div class="info-per">
+                          <div class="info-title">超级牛股王</div>
+                          <div class="info-content">
+                            <span>38篇笔记</span>
+                            <span>成功率58.89%</span>
+                            <span>总涨幅67%</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="info-bag">￥50红包</div>
+                    </div>
+                  </div>
+                  <div class="u-getmore">加载更多</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@include('include/jsFooter.html')
+  <!-- build:js assets/scripts/index.js -->
+  <script src="_assets/scripts/index.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

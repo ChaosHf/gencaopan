@@ -92,6 +92,7 @@
   },
   "dependencies": {
     "echarts": "^3.5.3",
-    "flexible": "^0.1.20"
+    "flexible": "^0.1.20",
+    "gulp-file-include": "^2.0.1"
   }
 }

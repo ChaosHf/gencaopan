@@ -1,0 +1,80 @@
+@@include('include/cssHead.html')
+
+<body>
+  <!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+  <div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div id="page-addNote" class="page">
+      <!--工具栏-->
+      @@include('include/navInclude.html')
+      <div class="content">
+        <div class="new-content new-content-choose">
+          <div class="new-content-title">
+            <div class="title-left">
+              <p class="u-title-left">一串小阳线，涨停潮</p>
+              <p class="u-title-left-s">
+                <span>发布02-05 13:20</span>截止02-06</p>
+            </div>
+            <div class="title-right">
+              <p class="title-text">
+                <span class="u-status1">进行中</span>
+                <span>起算后已上涨</span>
+                <span class="u-pre">0.56%</span>
+              </p>
+            </div>
+          </div>
+          <div class="new-content-panel">
+            <div class="panel-left">
+              <div class="panel-num">17
+                <span>%</span>
+              </div>
+              <div class="panel-title">6日预期收益</div>
+            </div>
+            <div class="panel-right">
+              <div class="panel-money">10
+                <span>元阅读费</span>
+              </div>
+              <div class="panel-title">34人已阅</div>
+            </div>
+          </div>
+        </div>
+        <div class="new-content">
+                <div class="new-content-title">
+                  <div class="title-left">
+                    <p class="u-title-left">一串小阳线，涨停潮</p>
+                    <p class="u-title-left-s">
+                      <span>发布02-05 13:20</span>截止02-06</p>
+                  </div>
+                  <div class="title-right">
+                    <p class="title-text">
+                      <span class="u-status1">进行中</span>
+                      <span>起算后已上涨</span>
+                      <span class="u-pre">0.56%</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="new-content-panel">
+                  <div class="panel-left">
+                    <div class="panel-num">17
+                      <span>%</span>
+                    </div>
+                    <div class="panel-title">6日预期收益</div>
+                  </div>
+                  <div class="panel-right">
+                    <div class="panel-money">10
+                      <span>元阅读费</span>
+                    </div>
+                    <div class="panel-title">34人已阅</div>
+                  </div>
+                </div>
+              </div>
+      </div>
+    </div>
+  </div>
+  @@include('include/jsFooter.html')
+  <!-- build:js assets/scripts/addNote.js -->
+  <script src="_assets/scripts/addNote.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

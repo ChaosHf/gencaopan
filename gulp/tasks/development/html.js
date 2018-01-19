@@ -2,6 +2,7 @@
 import gulp from 'gulp';
 import gulpLoadPlugins from 'gulp-load-plugins';
 import browserSync from 'browser-sync';
+import fileinclude from 'gulp-file-include';
 import {html as config}  from '../../config';
 
 const $ = gulpLoadPlugins();
@@ -22,5 +23,6 @@ gulp.task('html', ['less', 'fonts'], () => {
     .pipe($.if('*.css', $.cleanCss({compatibility: '*', advanced: false})))
     .pipe(cssfilter.restore)*/
     /*.pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))*/
+    .pipe(fileinclude())
     .pipe(gulp.dest(config.development.dest));
 });

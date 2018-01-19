@@ -1,0 +1,212 @@
+<!doctype html> @@include('include/cssHead.html')
+
+<body>
+  <!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+  <div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div id="page-personalInfo" class="page">
+
+      <div class="content">
+        <div class="m-subscribe">马上订阅</div>
+        <div class="m-perInfo">
+          <div class="m-perInfo-l">
+            <img src="assets/images/per/img_avatar.png" alt="">
+            <div class="m-perInfo-box">
+              <p class="u-perInfo-name">盾神</p>
+              <p class="u-perInfo-text">无视盈亏</p>
+            </div>
+          </div>
+          <div class="m-perInfo-r">
+            <span class="u-price">1000</span>
+            <span>元／月</span>
+            <span class="u-pay">包月</span>
+          </div>
+        </div>
+        <!--标签页-->
+        <div class="buttons-tab">
+          <a href="#" class="tabs-link active button j-link" data-tab=".tabs1" external>净值分析</a>
+          <a href="#" class="tabs-link button j-link" data-tab=".tabs2" external>牛股发布</a>
+          <a href="#" class="tabs-link button j-link" data-tab=".tabs3" external>笔记</a>
+        </div>
+        <div class="release-tab">
+          <div class="tabs">
+            <div class="tab tabs1">
+              <div class="m-analysis">
+                <div class="m-analysis-content">
+                  <div class="m-a-title">账户概述</div>
+                  <div class="m-a-content">
+                    <div class="m-a-panel">
+                      <div class="m-a-panel-box">
+                        <div class="m-a-panel-top m-a-panel-b">
+                          <span class="u-a-panel-title">累计收益率</span>
+                          <span class="u-a-panel-text">19%</span>
+                        </div>
+                        <div class="m-a-panel-top">
+                          <span class="u-a-panel-title">成功率</span>
+                          <span class="u-a-panel-text">19%</span>
+                        </div>
+                      </div>
+                      <div class="m-a-panel-box">
+                        <div class="m-a-panel-top m-a-panel-b">
+                          <span class="u-a-panel-title">起始日起</span>
+                          <span class="u-a-panel-text">2017-09-01</span>
+                        </div>
+                        <div class="m-a-panel-top">
+                          <span class="u-a-panel-title">最新数据</span>
+                          <span class="u-a-panel-text">2017-09-01</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="m-a-panel">
+                      <div class="m-a-panel-box">
+                        <div class="m-a-panel-top m-a-panel-b">
+                          <span class="u-a-panel-title">当日收益率</span>
+                          <span class="u-a-panel-text">19%</span>
+                        </div>
+                        <div class="m-a-panel-top">
+                          <span class="u-a-panel-title">30日收益率</span>
+                          <span class="u-a-panel-text">19%</span>
+                        </div>
+                      </div>
+                      <div class="m-a-panel-box">
+                        <div class="m-a-panel-top m-a-panel-b">
+                          <span class="u-a-panel-title">7日收益率</span>
+                          <span class="u-a-panel-text">17%</span>
+                        </div>
+                        <div class="m-a-panel-top">
+                          <span class="u-a-panel-title">年化收益率</span>
+                          <span class="u-a-panel-text">188%</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="m-a-panel">
+                      <div class="m-a-panel-box">
+                        <div class="m-a-panel-top">
+                          <span class="u-a-panel-title">投资股票</span>
+                          <span class="u-a-panel-text">
+                            <span>30</span>
+                            <span class="u-money">(20)</span>
+                        </div>
+                        <div class="m-a-panel-top u-status  m-a-panel-b">(成功)</div>
+                        <div class="m-a-panel-top">
+                          <span class="u-a-panel-title">投资</span>
+                          <span class="u-a-panel-text">19%</span>
+                        </div>
+                      </div>
+                      <div class="m-a-panel-box">
+                        <div class="m-a-panel-top">
+                          <span class="u-a-panel-title">盈利指数</span>
+                          <span class="u-a-panel-text">25</span>
+                        </div>
+                        <div class="m-a-panel-top u-status  m-a-panel-b">&nbsp;</div>
+                        <div class="m-a-panel-top">
+                          <span class="u-a-panel-title">止损触发</span>
+                          <span class="u-a-panel-text">3次</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="m-a-panel">
+                      <div class="m-a-panel-box">
+                        <div class="m-a-panel-top m-a-panel-b">
+                          <span class="u-a-panel-title">最大连续盈利</span>
+                          <span class="u-a-panel-text">19%</span>
+                        </div>
+                        <div class="m-a-panel-top">
+                          <span class="u-a-panel-title">最大回撤</span>
+                          <span class="u-a-panel-text">19%</span>
+                        </div>
+                      </div>
+                      <div class="m-a-panel-box">
+                        <div class="m-a-panel-top m-a-panel-b">
+                          <span class="u-a-panel-title">最大连续亏损</span>
+                          <span class="u-a-panel-text">17%</span>
+                        </div>
+                        <div class="m-a-panel-top">
+                          <span class="u-a-panel-title">平均持股时长</span>
+                          <span class="u-a-panel-text">188%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="m-analysis-content">
+
+                  <div class="m-a-title"><span>收益率曲线</span><div class="m-choose-time"><span class="active">一年</span><span>三个月</span><span>至今</span></div></div>
+                  <div class="m-a-quxian">
+                    曲线图
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab tabs2">
+              <div class="m-niugu">
+                <div class="m-niugu-panel">
+                  <div class="m-redBag">¥5000</div>
+                  <div class="m-n-panel-l m-status-1">
+                    <p class="u-n-panel-per">0.00%</p>
+                    <p class="u-n-panel-title">目标收益</p>
+                  </div>
+                  <div class="m-n-panel-r">
+                    <p class="u-n-r-num">634***</p>
+                    <p class="u-n-r-info">政策热点，技术雄厚，愣是大师大师大的</p>
+                    <div class="m-n-r-box">
+                      <span class="u-n-r-box u-n-r-box-1">股</span>
+                      <span class="u-n-r-box u-n-r-box-2">多</span>
+                      <span class="u-n-r-box u-n-r-box-3">进</span>
+                    </div>
+                    <div class="m-n-r-info">
+                      <img src="assets/images/mine/avatar.png" alt="">
+                      <span>超级牛股王</span>
+                    </div>
+                    <p class="u-n-r-time">2017年09月08日  10:00</p>
+                  </div>
+                </div>
+                <div class="m-niugu-panel">
+                    <div class="m-n-panel-l m-status-2">
+                      <p class="u-n-panel-per">0.00%</p>
+                      <p class="u-n-panel-title">目标收益</p>
+                    </div>
+                    <div class="m-n-panel-r">
+                      <p class="u-n-r-num">634***</p>
+                      <p class="u-n-r-info">政策热点，技术雄厚，愣是大师大师大的</p>
+                      <div class="m-n-r-box">
+                        <span class="u-n-r-box u-n-r-box-1">股</span>
+                        <span class="u-n-r-box u-n-r-box-2">多</span>
+                        <span class="u-n-r-box u-n-r-box-3">进</span>
+                      </div>
+                      <div class="m-n-r-info">
+                        <img src="assets/images/mine/avatar.png" alt="">
+                        <span>超级牛股王</span>
+                      </div>
+                      <p class="u-n-r-time">2017年09月08日  10:00</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="tabs3">
+              <div class="m-note">
+                <div class="m-note-panel">
+                  <div class="m-note-panel-l">
+                    <div class="u-note-p-title">近20省份明确开展试点--国企混改员工持股试点追踪</div>
+                    <div class="m-note-p-box">
+                      <span class="u-note-p-text">妖股涨不停军团</span>
+                      <span class="u-note-p-time">昨天22:45:56</span>
+                    </div>
+                  </div>
+                  <img src="assets/images/other/viewpoint.png" alt="" class="u-note-panel-r">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@include('include/jsFooter.html')
+  <!-- build:js assets/scripts/release.js -->
+  <script src="_assets/scripts/release.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

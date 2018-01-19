@@ -1,0 +1,156 @@
+<!doctype html> @@include('include/cssHead.html')
+
+<body>
+  <!-- page集合的容器，里面放多个平行的.page，其他.page作为内联页面由路由控制展示 -->
+  <div class="page-group">
+    <!-- 单个page ,第一个.page默认被展示-->
+    <div id="page-release" class="page">
+      @@include('include/navInclude.html')
+
+      <div class="content">
+        <!--标签页-->
+        <div class="buttons-tab">
+          <a href="#" class="tabs-link active button j-link" data-tab=".tabs1" external>推股票</a>
+          <a href="#" class="tabs-link button j-link" data-tab=".tabs2" external>写观点</a>
+        </div>
+        <div class="release-tab">
+          <div class="tabs">
+            <div class="tabs1">
+              <div class=" viewpoint-content">
+                <div class="viewpoint-column">
+                  <div class="col-inner">
+                    <div class="col-title">股票</div>
+                    <input class="col-input" type="number" placeholder="请填写六位数股票代码">
+                  </div>
+                  <div class="m-shares">
+                    <ul class="m-shares-num">
+                      <li>600001</li>
+                      <li>600001</li>
+                      <li>600001</li>
+                      <li>600001</li>
+                      <li>600001</li>
+                    </ul>
+                  </div>
+                  <div class="col-inner">
+                    <div class="col-title">预期</div>
+                    <input class="col-input" type="number" placeholder="2日">
+                  </div>
+                  <div class="col-inner">
+                    <div class="col-title">上涨</div>
+                    <input class="col-input" type="number" placeholder="2～50%" maxlength="2">
+                  </div>
+                  <div class="col-inner">
+                    <div class="col-title">止损</div>
+                    <input class="col-input" type="number" placeholder="2～50%" maxlength="2">
+                  </div>
+                </div>
+                <div class="viewpoint-title">
+                  <p class="u-v-tips">笔记写好后从下一个交易时间开始起算，T+1日开始判定是否达标</p>
+                  <div class="m-rules">
+                    <span>规则详情></span>
+                  </div>
+                </div>
+                <div class="viewpoint-column">
+                  <div class="col-inner">
+                    <div class="col-title">标题</div>
+                    <input class="col-input" type="text" placeholder="限定10个字以内" maxlength="10">
+                  </div>
+                  <div class="col-inner col-area">
+                    <div class="col-title col-title-area">逻辑</div>
+                    <textarea placeholder="选股逻辑10～300字" class="col-textarea"></textarea>
+                  </div>
+                </div>
+
+                <div class="viewpoint-column">
+                  <div class="col-inner col-custom">
+                    <div class="col-title u-col-custom">
+                      <span class="u-col-check"></span>
+                      <span>自定义买入价</span>
+                    </div>
+                    <input class="col-input" type="number" maxlength="10">
+                    <span class="u-unit">元</span>
+                  </div>
+                  <div class="col-inner">
+                    <div class="col-title">限时</div>
+                    <input class="col-input" type="text" placeholder="限定10个字以内" maxlength="10">
+                  </div>
+                  <div class="col-inner">
+                    <div class="col-title">限人</div>
+                    <span class="u-col-check num-span"></span>
+                    <span class="num-span">不限</span>
+                    <span class="u-col-check_no num-span"></span>
+                    <input class="item-input col-input num-input" type="number" placeholder="人数">
+                    <span class="u-unit">人</span>
+                  </div>
+                </div>
+                <div class="viewpoint-column">
+                  <div class="col-inner">
+                    <div class="col-title">查看费</div>
+                    <input class="col-input" type="number" placeholder="0~500元" maxlength="3">
+                  </div>
+                  <div class="col-inner">
+                    <div class="col-title">推广红包</div>
+                    <input class="col-input" type="number" placeholder="请输入红包金额" maxlength="10">
+                  </div>
+                </div>
+                <div class="viewpoint-title">
+                  <p>备注:将按成交次数平分给帮您转发成交的用户。</p>
+                </div>
+                <div class="viewpoint-submit">发布</div>
+              </div>
+            </div>
+            <div class="tab tabs2">
+              <div class="viewpoint-content">
+                <div class="viewpoint-column special-col">
+                  <div class="col-inner">
+                    <div class="col-title">标题</div>
+                    <input class="col-input" type="number" placeholder="请输入观点标题">
+                  </div>
+                </div>
+                <div class="viewpoint-column col-margin">
+                  <textarea placeholder="输入观点" class="col-textarea-view"></textarea>
+                  <div class="m-upload">
+                    <div class="m-img">
+                      <i></i>
+                      <img src="assets/images/mine/avatar.png" alt="" class="u-img">
+                    </div>
+                    <div class="m-img">
+                      <i></i>
+                      <img src="assets/images/mine/avatar.png" alt="" class="u-img">
+                    </div>
+                    <div class="m-img">
+                      <i></i>
+                      <img src="assets/images/mine/avatar.png" alt="" class="u-img">
+                    </div>
+                    <div class="m-img">
+                      <i></i>
+                      <img src="assets/images/mine/avatar.png" alt="" class="u-img">
+                    </div>
+                    <div class="m-img">
+                      <i></i>
+                      <img src="assets/images/mine/avatar.png" alt="" class="u-img">
+                    </div>
+                    <img src="assets/images/other/ico_jia.png" alt="" class="u-plus">
+                  </div>
+                </div>
+                <div class="viewpoint-column special-col">
+                  <div class="col-inner">
+                    <div class="col-title">添加笔记</div>
+                    <div class="col-add">2篇笔记</div>
+                  </div>
+                </div>
+                <div class="viewpoint-submit">发布</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@include('include/jsFooter.html')
+  <!-- build:js assets/scripts/release.js -->
+  <script src="_assets/scripts/release.js"></script>
+  <!-- endbuild -->
+</body>
+
+</html>

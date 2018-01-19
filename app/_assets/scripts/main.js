@@ -21,4 +21,3 @@ $('.j-close').on('click', function () {
   var close_obj = $(this).data('close-obj');
   $(close_obj).hide();
 });
-$.init();
