@@ -12,20 +12,20 @@
           <div class="search-box">
             <div class="search-content">
               <span class="search-icon"></span>
-              <input type="text" class="search-input" placeholder="输入股票代码">
+              <input type="text" class="search-input" placeholder="输入牛散名称">
             </div>
           </div>
         </div>
         <!--标签页-->
         <div class="buttons-tab">
-          <a href="#" class="tabs-link active button j-link" data-tab=".niugu" external>牛股王</a>
+          <a href="#" class="tabs-link active button j-link" data-tab=".niugu" external>热门搜索</a>
           <a href="#" class="tabs-link button j-link" data-tab=".income" external>收益榜单</a>
           <a href="#" class="tabs-link button j-link" data-tab=".release" external>最新发布</a>
         </div>
         <div class="index-tab">
           <div class="tabs">
-            <div class="tab niugu ">
-              <div class="m-serve">
+            <div class="tab niugu active">
+              <!-- <div class="m-serve">
                 <img src="assets/images/index/img_avatar.png" alt="" class="u-serve-avatar">
                 <div class="m-serve-m">
                   <p class="u-serve-title">客户经理007</p>
@@ -39,28 +39,27 @@
                 </div>
                 <div class="u-serve-question">提问</button>
                 </div>
-
-              </div>
+              </div> -->
               <div class="m-panel">
                 <div class="m-panel-l-box">
                   <div class="m-panel-l">
                     <div class="m-p-l-box">
-                      <span class="u-status">收</span>
+                      <span class="u-status">新</span>
                       <img src="assets/images/index/n-avatar.png" alt="">
                     </div>
                     <p>骨骸指南</p>
                   </div>
                   <div class="m-panel-m">
-                    <p>累计收益率：
-                      <span class="u-red">3.34%</span>
+                    <p>累计净值：
+                      <span class="u-red">45677.00</span>
                     </p>
-                    <p>年均收益：
-                      <span class="u-green">3.34%</span>
+                    <p>累计市值：
+                      <span class="u-red">8888.88</span>
                     </p>
-                    <p>成功率：
+                    <p>搜索次数：
                       <span>88%</span>
                     </p>
-                    <p>无视盈亏</p>
+                    <!-- <p>无视盈亏</p> -->
                   </div>
                 </div>
                 <div class="m-panel-r">
@@ -74,26 +73,26 @@
                 <div class="m-panel-l-box">
                   <div class="m-panel-l">
                     <div class="m-p-l-box">
-                      <span class="u-status">收</span>
+                      <span class="u-status">新</span>
                       <img src="assets/images/index/n-avatar.png" alt="">
                     </div>
                     <p>骨骸指南</p>
                   </div>
                   <div class="m-panel-m">
-                    <p>累计收益率：
-                      <span class="u-red">3.34%</span>
+                    <p>累计净值：
+                      <span class="u-red">45677.00</span>
                     </p>
-                    <p>年均收益：
-                      <span class="u-green">3.34%</span>
+                    <p>累计市值：
+                      <span class="u-red">8888.88</span>
                     </p>
-                    <p>成功率：
+                    <p>搜索次数：
                       <span>88%</span>
                     </p>
-                    <p>无视盈亏</p>
+                    <!-- <p>无视盈亏</p> -->
                   </div>
                 </div>
                 <div class="m-panel-r">
-                  <div class="u-r-price">
+                  <!-- <div class="u-r-price">
                     <p>
                       <span>300</span>元/月</p>
                     <div class="u-r-pay">包月</div>
@@ -102,12 +101,18 @@
                     <p>
                       <span>300</span>元/季</p>
                     <div class="u-r-pay">包季</div>
+                  </div> -->
+                  <div class="u-r-status">
+                    <span>订阅更新</span>
+                  </div>
+                  <div class="u-r-status">
+                    <span>买点估价</span>
                   </div>
                   <div class="u-r-num">527人已订阅</div>
                 </div>
               </div>
             </div>
-            <div class="tab income active">
+            <div class="tab income ">
               <div class="new-title">
                 <div class="new-box active">收益低于10%</div>
                 <div class="new-box">收益10%～20%</div>
@@ -298,9 +303,7 @@
     </div>
   </div>
   @@include('include/jsFooter.html')
-  <!-- build:js assets/scripts/index.js -->
-  <script src="_assets/scripts/index.js"></script>
-  <!-- endbuild -->
+
 </body>
 
 </html>
